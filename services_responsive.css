@@ -1,0 +1,9 @@
+@media(max-width: 1000px){
+    .header_top{
+        flex-direction: column;
+    }
+    #website_logo{
+        width: 75%;
+        height: auto;
+    }
+}

@@ -1,9 +1,55 @@
-@media(max-width: 1000px){
-    .header_top{
-        flex-direction: column;
+/* header responsive */
+@media (max-width: 1000px) {
+  .header_top {
+    flex-direction: column;
+  }
+
+  @media (max-width: 600px) {
+    .website_logo{
+        padding-left: 10%;
     }
     #website_logo{
-        width: 75%;
-        height: auto;
+        width: 150px;
     }
+    .nav_links {
+      display: none;
+    }
+    .menu{
+        display: block;
+    }
+  }
+  /* heder responsive end */
+
+  /* services sections responsive */
+  .services_section .first_part {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services_section .first_part .text_box {
+    width: 80%;
+  }
+
+  .first_part_pic img {
+    height: 230px;
+    width: 350px;
+  }
+
+  .services_list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .services_list .service_item {
+    width: 98%;
+  }
+}
+
+/* services itemes for devices having size bwtween 1000px and 1350px */
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .services_list .service_item {
+    margin-right: 20px;
+  }
 }

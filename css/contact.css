@@ -1,0 +1,483 @@
+/* heder section css start */
+.header_top{
+    padding-top:25px;
+    padding-left: 20px;
+}
+
+
+.header_top{
+    background-color: #BCA0BC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+.header_top .phon_num, .header_top .email_address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.header_top .email_address{
+    margin-right: 10px;
+    color: white;
+}
+.email_address svg path, 
+.email_address svg rect,
+.phon_num svg path, 
+.phon_num svg rect {
+  stroke: white; /* Changes the stroke color to white */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bottom{
+    height: 100px;
+    background-color: #537D90;
+}
+#website_logo{
+    margin-top: -80px;
+    height: 250px;
+    width: 250px;
+}
+.nav_links{
+    margin-right: 60px;
+    margin-top: -80px;
+}
+.nav_links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+.nav_links .active{
+    color:#BCA0BC;
+}
+
+/* heder section css end */
+
+
+
+body {
+    background-color: #537D90;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-up {
+    background-color: #BCA0BC;
+    height: 35px;
+    margin-top: -8px;
+    margin-left: -8px;
+    margin-right: -50px;
+}
+
+
+
+.logo {
+    height: 140px;
+    width: 190px;
+    margin-left: 0px;
+    margin-top: -8px;
+}
+
+ul {
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 10px;
+}
+
+.nav-item .nav-link {
+    padding: 10px;
+    margin-top: -7px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.nav-item.active .nav-link {
+    color: #BCA0BC;
+}
+
+.menu-bar :hover {
+    color: #BCA0BC;
+}
+
+
+
+.H1Word {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-top: 70px;
+    color: #BCA0BC;
+}
+
+.inputr {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 70px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputs {
+    color: #E0E0E0;
+}
+
+:-ms-input-placeholder {
+  color: #A6878E;
+}
+
+::placeholder {
+  color: #A6878E;
+  font-size: 15px;
+}
+
+
+.box1 {
+    width: 500px;
+    height: 50px;
+    border-radius: 30px 60px;
+    border-style: hidden;
+    margin: 15px;
+    background-color: #F5E4D7;
+    color: #A6878E;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    padding-left: 5%;
+    font-size: 19px;
+}
+
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+
+
+input {
+    margin-bottom: 25px;
+    outline: none;
+}
+
+.namee{
+    position: relative;
+    bottom: -9px;
+}
+
+
+
+.message-box {
+    width: 500px;
+    height: 120px;
+    border-radius: 30px 60px;
+    border-style: none;
+    margin: 15px;
+    background-color: #F5E4D7;
+    color: #A6878E;
+    display: flex;
+    justify-content: center;
+    margin-left: -10px;
+    padding-left: 5%;
+}
+
+
+.send{
+    width: 80px;
+    height: 40px;
+    border-radius: 16px;
+    border-color: #537D90;
+    border-style:hidden;
+    background-color: #F5E4D7;
+    color: #A6878E;
+    position: relative;
+    right: -230px;
+}
+
+.send:hover{
+    background-color: #A6878E;
+    color: #F5E4D7;
+    width: 65px;
+    height: 35px;
+}
+
+
+/* the footer css*/
+
+footer {
+    background-color: #49600C;
+    color: white;
+    height: 100%;
+}
+
+
+
+.subscribe form{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 30px;
+    margin-left: 50px;
+    flex-direction: row;
+    position: relative;
+    top: 35px;
+}
+
+.subscribe .emailfooter{
+    width: 280px;
+    height: 40px;
+    border-radius: 40px 0 0 40px;
+    border:none;
+    text-align: center;
+    font-size: 18px;
+}
+
+.emailfooter::placeholder {
+    color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+  }
+
+.subscribe .subsbutton{
+    height: 42px;
+    width: 115px;
+    border:none;
+    border-radius: 0 40px 40px 0;
+    font-size: 15px;
+    font-weight: bold;
+    color: #008CCB;
+}
+
+.subsbutton:hover{
+    background-color: #008CCB;
+    color: #000000;
+}
+
+.subscribe p{
+    font-size: 20px;
+    margin-top: -6px;
+    margin-bottom: 14px;
+    margin-left: 70px;
+    position: relative;
+    top: 45px;
+}
+
+
+.hlineL{
+    width: 2px;
+    height: 240px;
+    background-color: white;
+    position: relative;
+    right: -480px;
+    top: -128px;
+}
+
+
+
+.hlineR{
+    width: 2px;
+    height: 240px;
+    background-color: white;
+    position: relative;
+    right: -1510px;
+    top: -368px;
+}
+
+
+.centerP{
+    height: 50px;
+    width: 930px;
+    position: relative;
+    right: -535px;
+    top: -600px;
+    font-size: 20px;
+}
+
+
+.login-signup{
+    background-color: #fff;
+    width: 260px;
+    height: 50px;
+    position: relative;
+    left: 1575px;
+    top: -660px;
+    border-radius: 17px;
+    font-weight: bold;
+}
+
+.midlleline{
+    background-color: #000000;
+    position: absolute;
+    height: 45px;
+    width: 2px;
+    transform: translateX(6200%);
+    bottom: 2px;
+}
+
+.login-signup a{
+    text-decoration: none;
+    color: #008CCB;
+}
+
+
+.login-signup-text{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+    margin-left: 30px;
+    position: relative;
+    top: 12px;
+    font-size: 22px;
+}
+
+
+.logintext{
+    height: 80px;
+    width: 320px;
+    position: relative;
+    right:-1550px;
+    top: -650px;
+    font-size: 16px;
+}
+
+
+
+.greenline{
+    width: 102%;
+    height: 50px;
+    background-color: #90C404;
+    position: relative;
+    top: -607px;
+    left: -10px;
+}
+
+
+
+.logofooter img{
+    height: auto;
+    width: 130px;
+    position: relative;
+    top: -697px;
+    left: 50px;
+}
+
+
+
+.logoname p{
+    position: relative;
+    top: -792px;
+    right: -350px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.copyright{
+    position: relative;
+    animation: move-text 10s linear infinite;
+    z-index: 1;
+    
+}
+
+@keyframes move-text{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+
+.copyright{
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    transform: translateX(-20%);
+}
+
+
+
+.copyright {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    bottom: -379px;
+    font-size: 15px;
+    white-space:nowrap;
+}
+
+
+
+.footerdesign{
+    position: relative;
+    right: -50px;
+    margin-right: 75px;
+
+}
+
+
+
+.copyright-line{
+    height: 33px;
+    width: 100%;
+    background-color: #000000;
+    border-radius: 0;
+    z-index: -1;
+    position: relative;
+    bottom: -320px;
+}
+
+.footer-line{
+    position: relative;
+    top: 30px;
+    font-size: 50px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 5px;
+}
+
+/* the end footer css*/
+

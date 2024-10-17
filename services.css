@@ -114,7 +114,6 @@ nav {
 .services_list .service_item{
     border: 2px solid #90C404;
     width: 400px;
-    height: 300px;
     border-radius: 25px;
     display: flex;
     align-items: center;

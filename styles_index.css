@@ -216,3 +216,220 @@ hr{
     display:flex;
     justify-content:center;
 }
+/* Styles responsifs pour téléphones */
+@media screen and (max-width: 1024px) {
+ 
+
+    .hero {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-text {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    video {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .comment-box {
+        width: 90%;
+    }
+}
+
+/* Styles responsifs pour téléphones */
+@media screen and (max-width: 768px) {
+  
+
+    main {
+        padding: 30px 10px;
+    }
+
+    .hero-text {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 1.8em;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .comment-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .user-photo {
+        width: 40px;
+        height: 40px;
+    }
+
+    .comment-content {
+        font-size: 14px;
+    }
+
+    .comment-boxes {
+        gap: 15px;
+    }
+}
+/* Pour les tablettes (écrans de moins de 1024px) */
+@media screen and (max-width: 1024px) {
+    .nav_links {
+        flex-direction: column;
+        margin: 0;
+        text-align: center;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        padding: 0 10px;
+    }
+
+    .our_project_img img,
+    .our_tech_img img,
+    .our_client_img img,
+    .our_certification_img img {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Pour les téléphones (écrans de moins de 768px) */
+@media screen and (max-width: 768px) {
+    .header_top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header_bottom nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_links {
+        flex-direction: column;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .hero-text {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .hero-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .cta-button {
+        padding: 8px 16px;
+        font-size: 0.9em;
+    }
+
+    .our_project_img img,
+    .our_tech_img img,
+    .our_client_img img,
+    .our_certification_img img {
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
+
+/* style de la page login */
+
+.login_container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:100px;
+    m
+}
+
+.login-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #90C404;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.avatar img {
+    width: 60%;
+    height: 60%;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    background-color: #90C404;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.social-login {
+    margin-top: 20px;
+}
+
+.social-login a {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    background-color: #90C404;
+    border-radius: 50%;
+    color: white;
+    text-decoration: none;
+    line-height: 30px;
+    font-size: 18px;
+}

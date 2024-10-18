@@ -201,7 +201,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 15px;
-    background-color: #f9f9f9;
+    background-color: #E5E5EA;
     display: flex;
     flex-direction: column;
 }
@@ -427,10 +427,8 @@ hr{
     }
 }
 /* footer starts */
-
 body{
     line-height: 1.5;
-    font-family: 'Poppins', sans-serif;
   }
   *{
     margin:0;
@@ -456,7 +454,7 @@ body{
      width: 25%;
      padding: 0 15px;
   }
-  .footer-col h4{
+  .footer-col h2{
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -464,7 +462,7 @@ body{
     font-weight: 500;
     position: relative;
   }
-  .footer-col h4::before{
+  .footer-col h2::before{
     content: '';
     position: absolute;
     left:0;
@@ -517,11 +515,57 @@ body{
       width: 50%;
       margin-bottom: 30px;
   }
+    .container{
+      display: flex;
+      text-align: center;
+    }
   }
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
   }
+  }
+  
+  
+  
+  
+  @media(max-width: 767px){
+    .H1Word{
+      font-size: 100%;
+    }
+  
+    .inputtts{
+      text-align:center;
+    }
+  
+    .namee{
+      font-size: 20px;
+    }
+  
+    .box1{
+      width: 350px;
+    }
+  
+    .message-box{
+      width: 350px;
+    }
+  
+    .send{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer-col h2:before{
+      margin-left: 41.5%;
+    }
+  
+  }
+  
+  @media(max-width: 574px){
+    
+    .footer-col h2:before{
+      margin-left: 45%;
+    }
   }
 
   /* footer end*/
@@ -556,7 +600,7 @@ body{
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background-color: #90C404;
+    background-color: #fff;
     margin: 0 auto 20px;
     display: flex;
     justify-content: center;
@@ -564,8 +608,8 @@ body{
 }
 
 .avatar img {
-    width: 60%;
-    height: 60%;
+    width: 100%;
+    height: 100%;
 }
 
 input[type="text"], input[type="password"] {

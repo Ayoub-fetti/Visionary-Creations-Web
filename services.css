@@ -7,7 +7,6 @@ body{
 }
 /* heder section css start */
 
-
 .header_top{
     padding-top:25px;
     padding-left: 20px;
@@ -81,23 +80,31 @@ nav {
 /* menuuuuuu for devices small screen size*/
 
 .nav_links_for_phone{
-    background-color: #90C404;
-    margin-bottom: 5px;
+    background-color: #fff;
+    display: none;
+    max-height: 0; /* Start with no height */
+    animation: reveal 1s forwards;
 }
+@keyframes reveal {
+    to {
+        max-height: 140px; /* Expand to a set height */
+    }
+}
+
+
 .nav_links_for_phone .links{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    visibility: hidden;
 }
 .nav_links_for_phone a{
     text-decoration: none;
-    margin-bottom: 4px;
-    color: #fff;
+    margin-bottom: 8px;
+    color: #90C404;
 }
 .nav_links_for_phone .active{
-    color: #439084;
+    text-decoration: underline;
 }
 
 .menu {
@@ -152,8 +159,9 @@ nav {
 /* services section css start */
 
 .services_section{
-    margin-top: 90px;
+    position: relative;
 }
+
 .services_section .first_part {
     background-color: #90C404;
     display: flex;
@@ -172,7 +180,7 @@ nav {
     font-size: 2.5em;
 }
 .services_section .first_part .text_box p{
-    color: #606060;
+    color: #E5E5EA;
 }
 .first_part_pic{
     width: 50%;

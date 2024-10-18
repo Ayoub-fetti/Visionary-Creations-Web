@@ -1,0 +1,211 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 100%;
+}
+/* heder section css start */
+
+
+.header_top{
+    padding-top:25px;
+    padding-left: 20px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_top .phon_num, .header_top .email_address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #90C404;
+}
+.header_top .email_address{
+    margin-right: 10px;
+    color: #90C404;
+}
+.email_address svg path, 
+.email_address svg rect,
+.phon_num svg path, 
+.phon_num svg rect {
+  stroke: #90C404; /* Changes the stroke color to white */
+}
+nav {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_bottom{
+    height: 140px;
+    background-color: #90C404;
+}
+.website_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+}
+#website_logo{
+    width: 100%; 
+    height: auto;
+    flex-shrink: 0;
+}
+.nav_links{
+    margin-right: 60px;
+}
+.nav_links a {
+    margin-left: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+}
+.nav_links a:hover{
+    color: #439084;
+}
+.nav_links .active{
+    color:#439084;
+}
+/* menuuuuuu */
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin-left: 40px;
+  }
+  .line {
+    fill: none;
+    stroke: #439084;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  
+
+
+/* heder section css end */
+
+
+/* services section css start */
+.services_section{
+    margin-top: -24px;
+    display: block;
+}
+.services_section .first_part {
+    background-color: #90C404;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5% 10% 5% 10%;
+}
+.services_section .first_part .text_box{
+    width: 42%;
+    color: #fff;
+    align-self: center;
+    
+}
+.services_section .first_part .text_box h1{
+    color: #fff;
+    font-size: 2.5em;
+}
+.services_section .first_part .text_box p{
+    color: #606060;
+}
+.first_part_pic{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 230px;
+}
+.first_part_pic img{
+    border-radius: 25px;
+    width: 98.9%;
+    opacity: 0.9;
+}
+
+
+/* service list css */
+
+.second_part{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+}
+.services_list{
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.services_list .service_item{
+    border: 2px solid #90C404;
+    width: 400px;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.services_list .service_item h2{
+    color: #90C404;
+}
+.services_list .service_item p{
+    color: #606060;
+}
+
+.services_list .service_item:hover{
+    transform: scale(1.05);
+    border: 2px solid #439084;
+}
+.service_item:hover h2{
+    color: #439084;
+}
+.service_item:hover img{
+    filter: invert(54%) sepia(32%) saturate(579%) hue-rotate(121deg) brightness(87%) contrast(88%);
+}
+.services_list .service_item img{
+    margin-top: 20px;
+    color: #fff;
+}
+.services_list .service_item p{
+    width: 80%;
+    text-align: center;
+}

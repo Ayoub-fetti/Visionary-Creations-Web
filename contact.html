@@ -16,6 +16,8 @@
 
 
         <link rel="stylesheet" href="/contact.css" />
+        <link rel="stylesheet" href="services_responsive.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@400;700&display=swap"
             rel="stylesheet">
         <style>
@@ -31,16 +33,48 @@
     <header class="header_section">
         <div class="header_top">
           <div class="phon_num">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/>
-              </svg>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.0376 5.31617L10.6866 6.4791C11.2723 7.52858 11.0372 8.90532 10.1147 9.8278C10.1147 9.8278 10.1147 9.8278 10.1147 9.8278C10.1146 9.82792 8.99588 10.9468 11.0245 12.9755C13.0525 15.0035 14.1714 13.8861 14.1722 13.8853C14.1722 13.8853 14.1722 13.8853 14.1722 13.8853C15.0947 12.9628 16.4714 12.7277 17.5209 13.3134L18.6838 13.9624C20.2686 14.8468 20.4557 17.0692 19.0628 18.4622C18.2258 19.2992 17.2004 19.9505 16.0669 19.9934C14.1588 20.0658 10.9183 19.5829 7.6677 16.3323C4.41713 13.0817 3.93421 9.84122 4.00655 7.93309C4.04952 6.7996 4.7008 5.77423 5.53781 4.93723C6.93076 3.54428 9.15317 3.73144 10.0376 5.31617Z"
+                stroke="#1C274C"
+                stroke-width="1.5"
+                stroke-linecap="round"
+              />
+            </svg>
             <span>+212622646630</span>
           </div>
-          
+  
           <div class="email_address">
-            <svg width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-              <rect x="3" y="5" width="18" height="14" rx="2" stroke="#000000" stroke-width="2" stroke-linecap="round"/>
+            <svg
+              width="20px"
+              height="20px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M4 7.00005L10.2 11.65C11.2667 12.45 12.7333 12.45 13.8 11.65L20 7"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+                stroke="#000000"
+                stroke-width="2"
+                stroke-linecap="round"
+              />
             </svg>
             <span>support@visionarycreations.ma</span>
           </div>
@@ -49,20 +83,47 @@
           <nav>
             <div class="website_logo">
               <a href="index.html">
-                <img id="website_logo" src="img/logo.png" alt="logo of website" />
+                <img id="website_logo" src="images/logo.png" alt="logo of website" />
               </a>
             </div>
-            <div class="nav_links">  
-              <a href="index.html">Home</a>
+            <div class="nav_links">
+              <a href="index.html#homme">Home</a>
+              <a href="services.html" class="active">Services</a>
+              <a href="work.html">Work</a>
+              <a href="contact.html">Contact</a>
+              <a id="login_link" href="login.html">Log in</a>
+            </div>
+              <button
+                class="menu"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                aria-label="Main Menu"
+              >
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                  <path
+                    class="line line1"
+                    d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+                  />
+                  <path class="line line2" d="M 20,50 H 80" />
+                  <path
+                    class="line line3"
+                    d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+                  />
+                </svg>
+              </button>
+          </nav>
+          <div class="nav_links_for_phone">
+            <div class="links">
+              <a href="index.html#homing">Home</a>
               <a href="services.html" >Services</a>
               <a href="work.html">Work</a>
               <a href="contact.html" class="active">Contact</a>
+              <a href="login.html">Log in</a>
             </div>
-          </nav>
+          </div>
         </div>
       </header>
 
-    <title>Contact-Us</title>
+    
 
     <link rel="stylesheet" href="contact.css">
     </head>
@@ -78,31 +139,29 @@
     <section class="inputtts">
         <div class="inputr">
             <form action="">
-                <label class="inputs"> <span class="namee">name : </span>
+                <label class="inputs"> <span class="namee">Name : </span>
                     <input required type="text" placeholder="e.g : Lieon Korteil" class="box1" />
                 </label>
-                <label class="inputs"> <span class="namee">email : </span>
+                <label class="inputs"> <span class="namee">Email : </span>
                     <input required type="email" placeholder="e.g : LoremSipherz@gmail.com" class="box1" />
                 </label>
-                <label class="inputs"><span class="namee">the service : </span>
+                <label class="inputs"><span class="namee">The Service : </span>
                     <input type="text" placeholder="e.g : Error fixing" class="box1" />
                 </label>
-                <label class="inputs"><span class="namee">message : </span>
+                <label class="inputs"><span class="namee">Message : </span>
                     <input type="text"
-                        placeholder="e.g : I made an application and I have some errors need to be fixed..."
+                        placeholder="e.g : Lorem ipsum dolor sit amet consectetur adipisicing elit."
                         class="message-box" />
                 </label>
-                <label class="inputs">
+                
+                <div class="inputs">
                     <input class="send" type="submit" value="SEND" />
-                </label>
+                </div>
             </form>
         </div>
     </section>
 
-    <!-- here we need a line 
-     and then we need to work on the footer-->
 
-    <div class="footer-line"></div>
 
 
     <!--footer section-->
@@ -112,40 +171,39 @@
         <div class="container">
          <div class="row">
            <div class="footer-col">
-             <h4>company</h4>
+             <h2>company</h2>
              <ul>
-               <li><a href="#">about us</a></li>
-               <li><a href="#">our services</a></li>
+               <li><a href="index.html">about us</a></li>
+               <li><a href="services.html#SERVICES">our services</a></li>
                <li><a href="#">privacy policy</a></li>
                <li><a href="#">affiliate program</a></li>
              </ul>
            </div>
            <div class="footer-col">
-             <h4>get help</h4>
+             <h2>Menu</h2>
              <ul>
-               <li><a href="#">FAQ</a></li>
-               <li><a href="#">services</a></li>
-               <li><a href="#">returns</a></li>
-               <li><a href="#">works</a></li>
-               <li><a href="#">login</a></li>
+               <li><a href="services.html#services">services</a></li>
+               <li><a href="index.html">home</a></li>
+               <li><a href="work.html">works</a></li>
+               <li><a href="login.html">login</a></li>
              </ul>
            </div>
            <div class="footer-col">
-             <h4>Services</h4>
+             <h2>Services</h2>
              <ul>
-               <li><a href="#">design</a></li>
-               <li><a href="#">back end</a></li>
-               <li><a href="#">front end</a></li>
-               <li><a href="#">devops</a></li>
+                <li><a href="services.html#design">design</a></li>
+                <li><a href="services.html#development">development</a></li>
+                <li><a href="services.html#marketing">marketing</a></li>
+                <li><a href="services.html#error-fixing">error fixing</a></li>
              </ul>
            </div>
            <div class="footer-col">
-             <h4>follow us</h4>
+             <h2>follow us</h2>
              <div class="social-links">
-               <a href="#"><i class="fab fa-facebook-f"></i></a>
-               <a href="#"><i class="fab fa-twitter"></i></a>
-               <a href="#"><i class="fab fa-instagram"></i></a>
-               <a href="#"><i class="fab fa-linkedin-in"></i></a>
+               <a href="https://www.facebook.com/people/YouCode-Students/100058610626725/" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+               <a href="https://x.com/studentsyoucode" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+               <a href="https://www.instagram.com/youcodeschool/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+               <a href="https://www.linkedin.com/company/youcode-maroc/posts/?feedView=all" aria-label="Linkdin"><i class="fab fa-linkedin-in"></i></a>
              </div>
            </div>
          </div>

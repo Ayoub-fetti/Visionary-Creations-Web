@@ -17,6 +17,9 @@
     .menu{
         display: block;
     }
+    .nav_links{
+      display: none;
+    }
   }
   /* heder responsive end */
 

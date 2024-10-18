@@ -74,7 +74,7 @@ nav {
 #login_link{
     border: 3px solid #439084;
     border-radius: 25px;
-    padding: 4px 10px 4px 10px;
+    padding: 3px 10px 3px 10px;
 }
 
 
@@ -213,7 +213,8 @@ nav {
     flex-direction: column;
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.services_list .service_item h2{
+.services_list .service_item .service_item_title{
+    font-size: 1.5em;
     color: #90C404;
 }
 .services_list .service_item p{
@@ -224,7 +225,7 @@ nav {
     transform: scale(1.05);
     border: 2px solid #439084;
 }
-.service_item:hover h2{
+.service_item:hover .service_item_title{
     color: #439084;
 }
 .service_item:hover img{

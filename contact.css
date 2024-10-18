@@ -198,7 +198,7 @@ ul {
     display: flex;
     justify-content: center;
     font-size: 30px;
-    margin-top: 140px;
+    margin-top: 180px;
     color: #008CCB;
 }
 
@@ -229,6 +229,7 @@ section {
   color: #8d8c8c;
   font-size: 15px;
   font-weight: bold;
+
 }
 
 
@@ -242,11 +243,12 @@ section {
     color: #000000;
     display: flex;
     justify-content: center;
-    margin-left: -10px;
     padding-left: 5%;
     font-size: 17px;
     font-weight: bold;
 }
+
+
 
 
 
@@ -269,8 +271,9 @@ input {
 }
 
 .namee{
-    position: relative;
-    bottom: -9px;
+  display: flex;
+  margin-left: 20px;
+  font-weight:420;
 }
 
 
@@ -285,7 +288,6 @@ input {
     color: #000000;
     display: flex;
     justify-content: center;
-    margin-left: -10px;
     padding-left: 5%;
     font-weight: bold;
     font-size: 17px;
@@ -301,9 +303,8 @@ input {
     background-color: #E5E5EA;
     color: #008CCB;
     font-weight: bold;
-    position: relative;
-    right: -230px;
 }
+
 
 .send:hover{
     background-color: #008CCB;
@@ -317,7 +318,6 @@ input {
 
 body{
   line-height: 1.5;
-  font-family: 'Poppins', sans-serif;
 }
 *{
   margin:0;
@@ -343,7 +343,7 @@ ul{
    width: 25%;
    padding: 0 15px;
 }
-.footer-col h4{
+.footer-col h2{
   font-size: 18px;
   color: #ffffff;
   text-transform: capitalize;
@@ -351,12 +351,12 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h4::before{
+.footer-col h2::before{
   content: '';
   position: absolute;
   left:0;
   bottom: -10px;
-  background-color: #e91e63;
+  background-color: #fff;
   height: 2px;
   box-sizing: border-box;
   width: 50px;
@@ -404,11 +404,58 @@ ul{
     width: 50%;
     margin-bottom: 30px;
 }
+  .container{
+    display: flex;
+    text-align: center;
+  }
 }
 @media(max-width: 574px){
   .footer-col{
     width: 100%;
 }
 }
+
+
+
+
+@media(max-width: 767px){
+  .H1Word{
+    font-size: 100%;
+  }
+
+  .inputtts{
+    text-align:center;
+  }
+
+  .namee{
+    font-size: 20px;
+  }
+
+  .box1{
+    width: 350px;
+  }
+
+  .message-box{
+    width: 350px;
+  }
+
+  .send{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-col h2:before{
+    margin-left: 41.5%;
+  }
+
+}
+
+@media(max-width: 574px){
+  
+  .footer-col h2:before{
+    margin-left: 45%;
+  }
+}
+
 
 /* the end footer css*/

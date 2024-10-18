@@ -4,13 +4,10 @@ body{
     font-family: 'Merriweather Sans', sans-serif;
 }
 /* heder section css start */
+
 .header_top{
     padding-top:25px;
     padding-left: 20px;
-}
-
-
-.header_top{
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -44,9 +41,16 @@ nav {
     height: 140px;
     background-color: #90C404;
 }
+.website_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 21%;
+}
 #website_logo{
-    height: 250px;
-    width: 250px;
+    width: 100%; 
+    height: auto;
+    flex-shrink: 0;
 }
 .nav_links{
     margin-right: 60px;
@@ -63,6 +67,80 @@ nav {
 .nav_links .active{
     color:#439084;
 }
+
+#login_link{
+    border: 3px solid #439084;
+    border-radius: 25px;
+    padding: 4px 10px 4px 10px;
+}
+
+
+/* menuuuuuu for devices small screen size*/
+
+.nav_links_for_phone{
+    background-color: #90C404;
+    margin-bottom: 5px;
+}
+.nav_links_for_phone .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+.nav_links_for_phone a{
+    text-decoration: none;
+    margin-bottom: 4px;
+    color: #fff;
+}
+.nav_links_for_phone .active{
+    color: #439084;
+}
+
+.menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    margin-left: 40px;
+    display: none;
+  }
+  .line {
+    fill: none;
+    stroke: #439084;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+
 main {
     background-color: #fff;
     padding: 50px 20px;
@@ -348,6 +426,106 @@ hr{
         margin: 0 auto;
     }
 }
+/* footer starts */
+
+body{
+    line-height: 1.5;
+    font-family: 'Poppins', sans-serif;
+  }
+  *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+  .footer{
+    background-color: #90C404;
+      padding: 70px 0;
+  }
+  .footer-col{
+     width: 25%;
+     padding: 0 15px;
+  }
+  .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+  }
+  .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    background-color: #fff;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #2b6e03;
+    font-weight: bold;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+  }
+  .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+  }
+  
+  
+  
+  /*responsive*/
+  @media(max-width: 767px){
+    .footer-col{
+      width: 50%;
+      margin-bottom: 30px;
+  }
+  }
+  @media(max-width: 574px){
+    .footer-col{
+      width: 100%;
+  }
+  }
+
+  /* footer end*/
+
 
 
 
@@ -360,8 +538,9 @@ hr{
     display:flex;
     justify-content:center;
     align-items:center;
-    margin-top:100px;
-    m
+    margin-top:200px;
+    margin-bottom:100px;
+    
 }
 
 .login-card {

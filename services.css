@@ -87,7 +87,7 @@ nav {
 }
 @keyframes reveal {
     to {
-        max-height: 140px; /* Expand to a set height */
+        max-height: 160px; /* Expand to a set height */
     }
 }
 
@@ -97,6 +97,9 @@ nav {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.nav_links_for_phone .links:first-child{
+    margin-top: 20px;
 }
 .nav_links_for_phone a{
     text-decoration: none;

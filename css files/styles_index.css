@@ -286,8 +286,7 @@ hr{
     bottom: -150px;
 }
 
-/* footer */
-/* footer end*/
+
 
 
 .work-content .our_project .our_project_img {
@@ -512,18 +511,66 @@ body{
   
   
   
-  /*responsive*/
-  @media(max-width: 767px){
+ 
+/*responsive*/
+@media(max-width: 767px){
     .footer-col{
       width: 50%;
       margin-bottom: 30px;
   }
+    .container{
+      display: flex;
+      text-align: center;
+    }
   }
   @media(max-width: 574px){
     .footer-col{
       width: 100%;
   }
   }
+  
+  
+  
+  
+  @media(max-width: 767px){
+    .H1Word{
+      font-size: 100%;
+    }
+  
+    .inputtts{
+      text-align:center;
+    }
+  
+    .namee{
+      font-size: 20px;
+    }
+  
+    .box1{
+      width: 350px;
+    }
+  
+    .message-box{
+      width: 350px;
+    }
+  
+    .send{
+      display: flex;
+      justify-content: center;
+    }
+  
+    .footer-col h2:before{
+      margin-left: 41.5%;
+    }
+  
+  }
+  
+  @media(max-width: 574px){
+    
+    .footer-col h2:before{
+      margin-left: 45%;
+    }
+  }
+  
 
   /* footer end*/
 

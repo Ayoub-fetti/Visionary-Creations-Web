@@ -456,7 +456,7 @@ body{
      width: 25%;
      padding: 0 15px;
   }
-  .footer-col h4{
+  .footer-col h2{
     font-size: 18px;
     color: #ffffff;
     text-transform: capitalize;
@@ -464,7 +464,7 @@ body{
     font-weight: 500;
     position: relative;
   }
-  .footer-col h4::before{
+  .footer-col h2::before{
     content: '';
     position: absolute;
     left:0;

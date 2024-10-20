@@ -289,15 +289,10 @@ ul{
   font-weight: 500;
   position: relative;
 }
-.footer-col h2::before{
-  content: '';
-  position: absolute;
-  left:0;
-  bottom: -10px;
-  background-color: #fff;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
+.footer-col h2{
+  text-decoration-line: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
 }
 .footer-col ul li:not(:last-child){
   margin-bottom: 10px;
@@ -381,19 +376,6 @@ ul{
     display: flex;
     justify-content: center;
   }
-
-  .footer-col h2:before{
-    margin-left: 41.5%;
-  }
-
 }
-
-@media(max-width: 574px){
-  
-  .footer-col h2:before{
-    margin-left: 45%;
-  }
-}
-
 
 /* the end footer css*/
